@@ -20,8 +20,7 @@ public class Main {
         B b1=new B();
         b1.meth();
 
-        B b2=new B();
-        b2.meth();
+        b1.meth();
     }
 
 }
