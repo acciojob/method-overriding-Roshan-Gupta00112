@@ -1,5 +1,32 @@
 package com.driver;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
+
+
+
 public class Main {
-  
+
+    public static class A{
+        public String meth(){
+            return "Invoking method from class A";
+        }
+    }
+    public static class B extends A{
+        @Override
+        public String meth(){
+           return "Method is overridden in Extended class B";
+       }
+    }
+
+
+    public static void main(String[] args) {
+        B b1=new B();
+        b1.meth();
+
+        B b2=new B();
+        b2.meth();
+    }
+
 }
